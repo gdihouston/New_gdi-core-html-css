@@ -4,35 +4,48 @@
 <head>
     <meta charset="utf-8">
 
-    <title>Class 1 ~ HTML/CSS ~ Girl Develop IT</title>
+    <title>Girl Develop IT - HTML/CSS - Class 2 - HTML</title>
 
-    <meta name="description" content="This is the official Girl Develop It Core HTML/CSS curriculum. It was developed through the contributions of Pamela Fox, Alexis Goldstein, Erin M. Kidwell, Izzy Johnston, and Jen Myers.
-
-        The course is meant to be taught in 4 or 6 two-hour sections. If you are teaching a 4 section course, you can ignore classes 5 and 6 without losing any impact or information. Each of the slides and practice files are customizable according to the needs of a given class or audience.">
+    <meta name="description" content="This is the official Girl Develop It Core HTML/CSS curriculum. It was developed through the contributions of Pamela Fox, Alexis Goldstein, Erin M. Kidwell, Izzy Johnston, and Jen Myers. The course is meant to be taught in 4 or 6 two-hour sections. If you are teaching a 4 section course, you can ignore classes 5 and 6 without losing any impact or information. Each of the slides and practice files are customizable according to the needs of a given class or audience.">
     <meta name="author" content="Girl Develop It">
 
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
-    <link rel="stylesheet" href="reveal/css/reveal.css">
-    <link rel="stylesheet" href="reveal/css/theme/gdidefault.css" id="theme">
+    <link rel="stylesheet" href="reveal.js/css/reveal.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="reveal.js/css/theme/black.css">
+    <link rel="stylesheet" href="css/theme/gdidefault.css" />
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
 
-    <!-- For syntax highlighting -->
-    <!-- light editor<link rel="stylesheet" href="lib/css/light.css">-->
-    <!-- dark editor-->
-    <link rel="stylesheet" href="reveal/lib/css/dark.css">
+    <link rel="stylesheet" href="css/flipclock.css">
 
-    <!-- If use the PDF print sheet so students can print slides-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
-    <link rel="stylesheet" href="reveal/css/print/pdf.css" type="text/css" media="print">
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
 
-    <!--[if lt IE 9]>
-    <script src="lib/js/html5shiv.js"></script>
-    <![endif]-->
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+
+
 </head>
 <body>
     <div class="reveal">
+
+        <div id="header"></div>
         <!-- Any section element inside of this container is displayed as a slide -->
         <div class="slides">
             <!-- Opening slide -->
@@ -151,21 +164,27 @@
                     </ul>
                 </section>
             </section><!-- End History-->
-            <!--Anatomy--> 
+            <!--Anatomy-->
             <section>
                 <section>
                     <!-- Roles of HTML v CSS -->
                     <h3>Anatomy of a website</h3>
                     <div class="blue"> Your Content</div>
-                    <div><span class="blue">+ HTML: </span>Structure</div>
-                    <div><span class="blue">+ CSS: </span>Presentation</div>
+                    <div>
+                        <span class="blue">+ HTML: </span>Structure
+                    </div>
+                    <div>
+                        <span class="blue">+ CSS: </span>Presentation
+                    </div>
                     <div class="blue">= Your Website</div>
                     <p>A website is a way to present your content to the world, using HTML and CSS to present that content &amp; make it look good.</p>
                 </section>
                 <section>
                     <h3>Example</h3>
                     <ul>
-                        <li><p>A paragraph is your content</p></li>
+                        <li>
+                            <p>A paragraph is your content</p>
+                        </li>
                         <li>
                             <div style="font-size: 80%">Putting your content into an HTML tag to make it look like a paragraph is Structure</div>
                             <pre><code data-trim>&lt;p>A paragraph is your content&lt;/p></code></pre>
@@ -175,7 +194,7 @@
                             <p class="blue">A paragraph is your content</p>
                             </li>
                     </ul>
-                </section><!--Anatomy--> 
+                </section><!--Anatomy-->
             </section> <!-- End Anatomy-->
             <!-- HTML element-->
             <section>
@@ -232,6 +251,16 @@
                         </li>
                     </ul>
                 </section>
+                <section>
+                    <h3>Important Attributes</h3>
+                    <p>While there are many different types of attributes elements can have. </p>
+                    <h4>Important Attributes</h4>
+                    <ul>
+                        <li>ID: 'Key' to represent element. Should be unique for the entire page</li>
+                        <li>Class: Defines style definitions for attribute </li>
+                    </ul>
+
+                </section>
             </section> <!-- End HTML element-->
             <!--HTML Tags -->
             <section>
@@ -263,7 +292,9 @@
                 <section>
                     <h3>Nesting</h3>
                     <p>All elements "nest" inside one another</p>
-                    <p><small>Nesting is what happens when you put other containing tags inside other containing tags. For example, you would put the &lt;p> inside of the &lt;body> tags. The &lt;p> is now nested inside the &lt;body></small></p>
+                    <p>
+                        <small>Nesting is what happens when you put other containing tags inside other containing tags. For example, you would put the &lt;p> inside of the &lt;body> tags. The &lt;p> is now nested inside the &lt;body></small>
+                    </p>
                     <img src="images/owls.jpg" alt="Owls" />
                     <p>Whichever element OPENS first CLOSES last</p>
                 </section>
@@ -296,7 +327,9 @@
                     <p>This element tells the browser which version of the markup language the page is using.</p>
                     <pre><code data-trim>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"></code></pre>
                     <pre><code data-trim>&lt;!DOCTYPE html></code></pre>
-                    <p><small>* The doctype is case-insensitive. <br />DOCtype, doctype, DocType and DoCtYpe are all valid.</small></p>
+                    <p>
+                        <small>* The doctype is case-insensitive. <br />DOCtype, doctype, DocType and DoCtYpe are all valid.</small>
+                    </p>
                 </section>
                 <section>
                     <h3>Tag: HTML</h3>
@@ -314,8 +347,12 @@
                 <section>
                     <h3>Tags: Head and Body</h3>
                     <div class="left-align">
-                        <p class="fragment"><span class="green">Head:</span> The head contains the title of the page &amp; meta information about the page. Meta information is not visible to the user, but has many purposes One of which is to tell search engines about your page, who created it, and a description. </p>
-                        <p class="fragment"><span class="green">Body:</span> The body contains the actual content of the page. Everything that is contained in the body is visible to the user.</p>
+                        <p class="fragment">
+                            <span class="green">Head:</span> The head contains the title of the page &amp; meta information about the page. Meta information is not visible to the user, but has many purposes One of which is to tell search engines about your page, who created it, and a description.
+                        </p>
+                        <p class="fragment">
+                            <span class="green">Body:</span> The body contains the actual content of the page. Everything that is contained in the body is visible to the user.
+                        </p>
                     </div>
                 </section>
                 <section>
@@ -336,7 +373,7 @@
                 &lt;/html>
               </code></pre>
                 </section>
-                <section class="hide-pdf">
+                <section>
                     <h3>Let's develop it!</h3>
                     <div>
                         <div class="left" style="width: 40%;">
@@ -374,7 +411,7 @@
                 <section>
                     <h3>Element: Paragraph</h3>
                     <div>
-                        <div class="left" style="width:50%">
+                        <div class="left" style="width: 50%">
                             <pre>
                             <code data-trim>&lt;p>Paragraph 1&lt;/p>
 &lt;p>Paragraph 2&lt;/p>
@@ -399,14 +436,18 @@
                             <p>Paragraph 3</p>
                         </div>
                         <div class="clear"></div>
-                        <p><small>* White space is only for humans!</small></p>
+                        <p>
+                            <small>* White space is only for humans!</small>
+                        </p>
                     </div>
                 </section>
                 <section>
                     <h3>Example: Paragraphs</h3>
                     <p>Paragraphs allow you to format your content in a readable fashion.</p>
                     <img src="images/example-paragraphs.png" alt="Example of Paragraphs in the wild" />
-                    <p><small>* You can edit how paragraphs are displayed with CSS</small></p>
+                    <p>
+                        <small>* You can edit how paragraphs are displayed with CSS</small>
+                    </p>
                 </section>
             </section> <!-- End Paragraphs-->
             <!-- Headings-->
@@ -414,7 +455,7 @@
                 <section>
                     <h3>Element: Heading</h3>
                     <div>
-                        <div class="left" style="width:50%">
+                        <div class="left" style="width: 50%">
                             <pre><code data-trim>
 &lt;h1>Heading 1&lt;/h1>
 &lt;h2>Heading 2&lt;/h2>
@@ -425,7 +466,7 @@
                             </code>
                         </pre>
                         </div>
-                        <div class="left" style="width:50%">
+                        <div class="left" style="width: 50%">
                             <h1 style="font-size: 120%">Heading 1</h1>
                             <h2 style="font-size: 110%">Heading 2</h2>
                             <h3 style="font-size: 105%">Heading 3</h3>
@@ -447,14 +488,14 @@
                 <section>
                     <h3>Formatted text</h3>
                     <div>
-                        <div class="left" style="width:50%">
+                        <div class="left" style="width: 50%">
                             <pre><code data-trim>&lt;p>
 Here is a paragraph with &lt;em>Emphasized&lt;/em> text and &lt;strong>Important&lt;/strong> text.
 &lt;/p>
                                 </code>
                             </pre>
                         </div>
-                        <div class="left left-align" style="width:50%">
+                        <div class="left left-align" style="width: 50%">
                             <p>
                                 Here is a paragraph with <em>Emphasized</em> text and <strong>Important</strong> text.
                             </p>
@@ -484,7 +525,9 @@ Here is a paragraph with &lt;em>Emphasized&lt;/em> text and &lt;strong>Important
                         <li>Title attribute: "Girl Develop It"</li>
                     </ul>
                     <pre><code data-trim>&lt;a href="http://www.girldevelopit.com" title="Girl Develop It Homepage">GDI&lt;/a></code></pre>
-                    <p><a href="http://www.girldevelopit.com" title="Girl Develop It Homepage">GDI</a></p>
+                    <p>
+                        <a href="http://www.girldevelopit.com" title="Girl Develop It Homepage">GDI</a>
+                    </p>
                     <p>The &lt;a&gt; tag surrounds text or images to turn them into links</p>
                 </section>
                 <!-- Link Attributes -->
@@ -492,10 +535,14 @@ Here is a paragraph with &lt;em>Emphasized&lt;/em> text and &lt;strong>Important
                     <h3>Link Attributes</h3>
                     <p>Links can have attributes that tell the link to do different actions like open in a new tab, or launch your e-mail program.</p>
                     <pre><code data-trim>&lt;a href="home.html" target="_blank">Link Text&lt;/a></code></pre>
-                    <p><small>Link opens in a new window/tab with <strong>target="_blank"</strong></small></p>
+                    <p>
+                        <small>Link opens in a new window/tab with <strong>target="_blank"</strong></small>
+                    </p>
                     <!-- Change email to fit your chapter's needs-->
                     <pre><code data-trim>&lt;a href="mailto:info@girldevelopit.com">E-mail us!&lt;/a></code></pre>
-                    <p><small>Link opens mail program by inserting <strong>mailto:</strong> directly before the email address.</small></p>
+                    <p>
+                        <small>Link opens mail program by inserting <strong>mailto:</strong> directly before the email address.</small>
+                    </p>
                 </section>
                 <!-- relative & absolute links -->
                 <section>
@@ -541,15 +588,17 @@ Here is a paragraph with &lt;em>Emphasized&lt;/em> text and &lt;strong>Important
                 <pre><code data-trim>
     &lt;img src ="http://girldevelopit.com/assets/pink-logo.png" alt = "Girl Develop It Logo"/>
     </code></pre>
-                <img src="reveal/css/images/pink-logo.png" alt="Girl Develop It Logo" style="border: none; background: none; box-shadow: none;" />
-                <p><small>* Notice: This tag is our first example of a stand-alone or "self-closing" element.</small></p>
+                <img src="images/pink-logo.png" alt="Girl Develop It Logo" style="border: none; background: none; box-shadow: none;" />
+                <p>
+                    <small>* Notice: This tag is our first example of a stand-alone or "self-closing" element.</small>
+                </p>
 
             </section> <!-- End Images-->
             <!-- Line Break-->
             <section>
                 <h3>Element: Line Break</h3>
                 <div>
-                    <div class="left" style="width:50%">
+                    <div class="left" style="width: 50%">
                         <pre><code data-trim>&lt;p>
 Imagine there's no Heaven &lt;br/>
 It's easy if you try &lt;br/>
@@ -559,11 +608,11 @@ Above us only sky
                             </code>
                         </pre>
                     </div>
-                    <div class="left left-align" style="width:50%">
+                    <div class="left left-align" style="width: 50%">
                         <p>
                             Imagine there's no Heaven <br />
                             It's easy if you try <br />
-                            No hell below us  <br />
+                            No hell below us <br />
                             Above us only sky
                         </p>
                     </div>
@@ -583,7 +632,7 @@ Above us only sky
                 <section>
                     <h3>Element: Lists</h3>
                     <div>
-                        <div class="left" style="width:50%">
+                        <div class="left" style="width: 50%">
                             <pre><code data-trim>&lt;ul>
     &lt;li>List Item&lt;/li>
     &lt;li>AnotherList Item&lt;/li>
@@ -597,7 +646,7 @@ Above us only sky
                             </code>
                         </pre>
                         </div>
-                        <div class="left" style="width:50%">
+                        <div class="left" style="width: 50%">
                             <p>
                                 Unordered list (bullets)
                                 <ul>
@@ -620,7 +669,9 @@ Above us only sky
                     <h3>Lists: Examples</h3>
                     <p>Lists can be used to organize any list of items.</p>
                     <img src="images/example-lists.png" alt="Examples of lists" />
-                    <p><small>You'd be surprised how often lists are used in web design.</small></p>
+                    <p>
+                        <small>You'd be surprised how often lists are used in web design.</small>
+                    </p>
                 </section>
             </section><!-- End Lists-->
             <!--Tables-->
@@ -630,7 +681,7 @@ Above us only sky
                     <p>Tables are a way to represent complex information in a grid format.</p>
                     <p>Tables are made up of rows and columns.</p>
                     <div>
-                        <div class="left" style="width:50%">
+                        <div class="left" style="width: 50%">
                             <pre>
                             <code data-trim>&lt;table>
   &lt;tr> 
@@ -645,7 +696,7 @@ Above us only sky
                             </code>
                         </pre>
                         </div>
-                        <div class="left left-align" style="width:50%">
+                        <div class="left left-align" style="width: 50%">
                             <table style="border: 1px solid">
                                 <tr>
                                     <th style="border: 1px solid">Head</th>
@@ -670,7 +721,7 @@ Above us only sky
             <section>
                 <h3>Character codes</h3>
                 <p>There are character codes for many different characters in many different languages</p>
-                <div class="left" style="width:50%">
+                <div class="left" style="width: 50%">
                     <ul>
                         <li>Delta: &amp;delta; &delta;</li>
                         <li>Copyright symbol: &amp;copy; &copy;</li>
@@ -688,7 +739,9 @@ Above us only sky
                 <h3>Comments</h3>
                 <p>You can add comments to your code that will not be seen by the browser, but only visible when viewing the code.</p>
                 <pre><code data-trim>&lt;!-- Comment goes here --></code></pre>
-                <p><small>Comments can be used to organize your code into sections so you (or someone else) can easily understand your code. It can also be used to 'comment out' large chunks of code to hide it from the browser.</small></p>
+                <p>
+                    <small>Comments can be used to organize your code into sections so you (or someone else) can easily understand your code. It can also be used to 'comment out' large chunks of code to hide it from the browser.</small>
+                </p>
                 <pre>
                 <code data-trim>&lt;!-- Beginning of header -->
 &lt;div id="header">Header Content &lt;/div>
@@ -710,58 +763,20 @@ Above us only sky
             <!--Questions-->
             <section>
                 <h2>Questions</h2>
-                <div><i class="fa fa-question"></i></div>
+                <div>
+                    <i class="fa fa-question"></i>
+                </div>
             </section> <!--End Questions-->
             <section>
                 <h3>Break Time!</h3>
                 <a href="index.html#/5"> <img src="images/BreakTimeCoffee.jpg" alt="Break Time" /></a>
             </section>
         </div>
-        <footer class="footer">
-            <img style="border-width: 0; float: left;" src="images/GDILogoTagLine.png" />
-            <div class="left copyright">
-                <a href="index.html">HTML/CSS ~ Girl Develop It ~</a>
-                <a href="index.html#/1">Agenda</a>
-            </div>
-        </footer>
+        <div id="footer"></div>
     </div>
-    <script src="reveal/lib/js/head.min.js"></script>
-    <script src="reveal/js/reveal.js"></script>
-    <script>
+    <script src="reveal.js/lib/js/head.min.js"></script>
+    <script src="reveal.js/js/reveal.js"></script>
+    <script src="js/GDIDefaultRevealSettings.js"></script>
 
-        // Full list of configuration options available here:
-        // https://github.com/hakimel/reveal.js#configuration
-        Reveal.initialize({
-            controls: true,
-            progress: true,
-            history: true,
-            keyboard: {
-                13: 'next' // go to the next slide when the ENTER key is pressed
-            },
-
-            theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-            transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/none
-
-            multiplex: {
-                secret: '14230272458751875356', // null so the clients do not have control of the master presentation
-                id: 'dcefdb9935e024a0', // id, obtained from socket.io server
-                url: 'revealjs.jit.su:80' // Location of your socket.io server
-            },
-            // Optional libraries used to extend on reveal.js
-            dependencies: [
-                { src: 'reveal/lib/js/classList.js', condition: function () { return !document.body.classList; } },
-                { src: 'reveal/plugin/markdown/showdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
-                { src: 'reveal/plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
-                { src: 'reveal/plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } },
-                { src: 'reveal/plugin/zoom-js/zoom.js', async: true, condition: function () { return !!document.body.classList; } },
-                { src: 'reveal/plugin/notes/notes.js', async: true, condition: function () { return !!document.body.classList; } },
-                { src: 'http://cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.16/socket.io.min.js', async: true },
-                { src: 'reveal/plugin/multiplex/master.js', async: true },
-                { src: 'reveal/plugin/multiplex/client.js', async: true }
-                
-            ]
-        });
-
-    </script>
 </body>
 </html>
