@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "gdi-core-html-css", "http://localhost:26236", "{A198AE89-3CB4-4D2E-AE65-80CF9440EC6B}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_26236"
+		Debug.AspNetCompiler.PhysicalPath = "..\gdi-core-html-css\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_26236\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_26236"
+		Release.AspNetCompiler.PhysicalPath = "..\gdi-core-html-css\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_26236\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "..\gdi-core-html-css\"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "gdi-core-html-css(1)", "http://localhost:5679", "{F8EDCB6F-2E40-4020-876C-F0D77F2BF19B}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_5679"
+		Debug.AspNetCompiler.PhysicalPath = "..\girldevelopit\gdi-core-html-css\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_5679\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_5679"
+		Release.AspNetCompiler.PhysicalPath = "..\girldevelopit\gdi-core-html-css\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_5679\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "..\girldevelopit\gdi-core-html-css\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A198AE89-3CB4-4D2E-AE65-80CF9440EC6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A198AE89-3CB4-4D2E-AE65-80CF9440EC6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8EDCB6F-2E40-4020-876C-F0D77F2BF19B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8EDCB6F-2E40-4020-876C-F0D77F2BF19B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
