@@ -206,14 +206,16 @@
             </section><!--End Class 1-->
 
             <!--First Break Time-->
-            <section>
+        <section>
                 <h3>Break Time!</h3>
                 <div class="message"></div>
                 <div class="center">
                     <img src="images/BreakTimeCoffee.jpg" alt="Break Time" />
                 </div>
                 <h4>Up Next: CSS</h4>
-                <div class="clock"></div>
+                <div class="stopwatch">
+                    <div class="clock"></div>    
+                </div>                
 
                 <script type="text/javascript">
                     var clock;
@@ -221,7 +223,7 @@
                     $(document).ready(function () {
                         var mins = 60 * 15;
                         clock = $('.clock').FlipClock(mins, {
-                            clockFace: 'none',
+                            clockFace: 'MinuteCounter',
                             countdown: true,
                             autoStart: true,
                             callbacks: {
@@ -249,7 +251,9 @@
                     <img src="images/LunchTime.jpg" alt="Lunch Time" />
                 </div>
                 <h4>Up Next: HTML Intermediate</h4>
-                <div class="LunchClock"></div>
+                 <div class="stopwatch">
+                    <div class="LunchClock"></div>    
+                </div>    
 
                 <script type="text/javascript">
                     var clock;
@@ -257,7 +261,7 @@
                     $(document).ready(function () {
                         var mins = 60 * 60;
                         clock = $('.LunchClock').FlipClock(mins, {
-                            clockFace: 'none',
+                            clockFace: 'MinuteCounter',
                             countdown: true,
                             autoStart: true,
                             callbacks: {
@@ -285,7 +289,9 @@
                     <img src="images/BreakTimeKeyboard.jpg" alt="Break Time" />
                 </div>
                 <h4>Up Next: HTMl Advanced</h4>
-                <div class="SecondsBreakClock"></div>
+                <div class="stopwatch">
+                    <div class="SecondsBreakClock"></div>    
+                </div>    
 
                 <script type="text/javascript">
                     var clock;
@@ -320,7 +326,9 @@
                 <div class="center">
                     <img src="images/BreakTimeDog.jpg" alt="Break Time" /> <br /><br /><br />
                 </div>
-                <div class="QuestionsClock"></div>
+                <div class="stopwatch">
+                    <div class="QuestionsClock"></div>    
+                </div>   
 
                 <script type="text/javascript">
                     var clock;
@@ -328,7 +336,7 @@
                     $(document).ready(function () {
                         var mins = 60 * 15;
                         clock = $('.QuestionsClock').FlipClock(mins, {
-                            clockFace: 'none',
+                            clockFace: 'MinuteCounter',
                             countdown: true,
                             autoStart: true,
                             callbacks: {

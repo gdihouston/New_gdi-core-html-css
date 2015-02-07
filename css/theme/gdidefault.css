@@ -203,3 +203,19 @@ body {
         .reveal footer .copyright a img {
             vertical-align: middle;
         }
+
+.stopwatch {
+    left: 335px;
+    top: 40px;    
+    position: relative;
+}
+
+.flip-clock-divider.minutes .flip-clock-label {
+    right: -140px !important;
+    display: none;
+}
+
+.flip-clock-divider.seconds .flip-clock-label {
+    right: -150px !important;
+    display: none;
+}
